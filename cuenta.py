@@ -42,8 +42,9 @@ class CuentaBancaria:
             #print (cuenta.balance)
             #print (cuenta.__dict__)
             print (f"Esta cuenta tiene un balance de {cuenta.balance}")
-        return (f"Hay un total de {len(cls.todas_las_cuentas)} cuentas")
+        #return (f"Hay un total de {len(cls.todas_las_cuentas)} cuentas")
         #sin el return me da none a la hora de llamar a la función)
+    
     @classmethod
     def suma_todos_los_balances(cls):
         sum = 0
@@ -51,3 +52,4 @@ class CuentaBancaria:
         for cuenta in cls.todas_las_cuentas:
             sum += cuenta.balance
         return sum
+        #return (f"Todos los balances del banco suman {sum}")

@@ -14,5 +14,10 @@ cuentaAndrea = CuentaBancaria()
 
 cuentaAndrea.deposito(1000).deposito(500).retiro(50).retiro(100).retiro(250).retiro(200).generar_intereses().mostrar_info_cuenta()
 
-print(CuentaBancaria.imprimir_todas_las_cuentas())
-print(CuentaBancaria.suma_todos_los_balances())
+"""
+print(CuentaBancaria.imprimir_todas_las_cuentas()) #imprime las impresiones dentro del metodo y NECESUTO TENER el retorno
+"""
+CuentaBancaria.imprimir_todas_las_cuentas()#solo imprime los print dentro del metodo, no necita tener retorno
+print(CuentaBancaria.suma_todos_los_balances())#enecista tener retorno porque imprime el retorno al usar print.
+
+#CuentaBancaria.suma_todos_los_balances()#esto no imprime nada ya que no hay impresiones dentro del metodo.
