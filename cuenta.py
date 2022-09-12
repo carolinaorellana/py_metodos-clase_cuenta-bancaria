@@ -36,7 +36,16 @@ class CuentaBancaria:
     
     #BONUS NINJA: utiliza un método de clase para imprimir todas las instancias de la información de una cuenta bancaria
     @classmethod
-    def todos_los_balances(cls):
+    def imprimir_todas_las_cuentas(cls):
+        #print(cls.todas_las_cuentas)
+        for cuenta in cls.todas_las_cuentas:
+            #print (cuenta.balance)
+            #print (cuenta.__dict__)
+            print (f"Esta cuenta tiene un balance de {cuenta.balance}")
+        return (f"Hay un total de {len(cls.todas_las_cuentas)} cuentas")
+        #sin el return me da none a la hora de llamar a la función)
+    @classmethod
+    def suma_todos_los_balances(cls):
         sum = 0
         # utilizamos cls para referirnos a la clase 
         for cuenta in cls.todas_las_cuentas:
